@@ -23,11 +23,10 @@ recognition.onresult = (arg) => {
 
     if (transcript === "salom") {
         recognition.stop();
-        utter.text = "Salom ahvollar qalay?";
+        utter.text = "Salom hayrli kun?";
         synth.speak(utter);
         console.log("Salom ahvollar qaley");
-    } 
-    if (transcript === "xayr") {
+    } else (transcript === "xayr") {
         recognition.stop();
         utter.text = "Hayr salomat boling?";
         synth.speak(utter);
