@@ -26,7 +26,8 @@ recognition.onresult = (arg) => {
         utter.text = "Salom hayrli kun?";
         synth.speak(utter);
         console.log("Salom ahvollar qaley");
-    } else if (transcript === "xayr") {
+    } 
+    if (transcript === "xayr") {
         recognition.stop();
         utter.text = "Hayr salomat boling?";
         synth.speak(utter);
